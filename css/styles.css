@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+:root {
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+}
+/* - Mobile: 375px
+- Desktop: 1440px */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--white);
+    background-image: url(../src/img/bg-pattern-top-mobile.svg), url(../src/img/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+}
+.main_container {
+    height: auto;
+    margin: 7rem auto;
+    width: 330px;
+}
+h1 {
+    color: var(--veryDarkMagenta);
+    font-size: 2.9rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 2.2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.main_paragraph {
+    color: var(--darkGrayishMagenta);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.ranking_container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.ranking_item {
+    background-color: var(--lightGrayishMagenta);
+    border-radius: 5px;
+    color: var(--veryDarkMagenta);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+.ranking_item p {
+    margin-top: 15px;
+}
+.card_user {
+    background-color: var(--veryDarkMagenta);
+    border-radius: 8px;
+    color: var(--white);
+    height: 250px;
+    margin-bottom: 20px;
+    max-width: 330px;
+    padding: 30px;
+}
+.card_header {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+.card_header img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 40px;
+}
+.card_header h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.card_header span {
+    color: var(--softPink);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card_user p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 20px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
