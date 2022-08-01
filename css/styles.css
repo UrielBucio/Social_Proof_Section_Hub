@@ -36,7 +36,7 @@ h1 {
     letter-spacing: -1px;
     line-height: 2.2rem;
     margin-bottom: 35px;
-    text-align: center;
+    /* text-align: center; */
 }
 .main_paragraph {
     color: var(--darkGrayishMagenta);
@@ -44,7 +44,7 @@ h1 {
     font-weight: 500;
     line-height: 1.7rem;
     margin-bottom: 35px;
-    text-align: center;
+    /* text-align: center; */
 }
 .ranking_container {
     display: flex;
@@ -71,7 +71,7 @@ h1 {
     color: var(--white);
     height: 250px;
     margin-bottom: 20px;
-    max-width: 330px;
+    min-width: 330px;
     padding: 30px;
 }
 .card_header {
@@ -106,4 +106,62 @@ h1 {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1024px) {
+    body {
+        background-image: url(../src/img/bg-pattern-top-desktop.svg), url(../src/img/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-size: 580px, 1024px;
+    }
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "text ranking"
+            "card card";
+        width: 80%;
+    }
+    .titles_container {
+        grid-area: text;
+        padding: 0 240px 25px 0;
+        text-align: left;
+    }
+    .ranking_container {
+        grid-area: ranking;
+    }
+    .ranking_item {
+        align-items: center;
+        display: flex;
+        padding: 2px;
+        width: 450px;
+    }
+    .two-left {
+        margin-left: 50px;
+    }
+    .three-left {
+        margin-left: 100px;
+    }
+    .ranking_item img {
+        margin: 0 5px 0;
+    }
+    .ranking_item p {
+        height: 35px;
+        margin: 20px 0 0 20px;
+        margin-left: 20px;
+    }
+    .users_container {
+        display: flex;
+        flex-flow: row nowrap;
+        grid-area: card;
+    }
+    .card_user {
+        margin: 0 30px 0 0;
+    }
+    .two {
+        margin-top: 15px;
+    }
+    .three {
+        margin-top: 30px;
+    }
 }
