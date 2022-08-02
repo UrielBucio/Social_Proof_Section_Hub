@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-submission-responsive-css-grid-and-css-flexbox-myjnRzW5_z)
 - Live Site URL: [Live URL](https://socialproofsection-ub.netlify.app/)
 
 ## My process
